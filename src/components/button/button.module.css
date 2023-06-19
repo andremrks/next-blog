@@ -1,0 +1,19 @@
+.container {
+  padding: 20px;
+  cursor: pointer;
+  background-color: #53c28b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: max-content;
+  transition: 300ms ease;
+  opacity: 0.8;
+}
+
+.container:hover {
+  opacity: 1;
+}
+
+.container:active {
+  transform: scale(0.9);
+}

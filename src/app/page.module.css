@@ -16,16 +16,6 @@
   font-weight: 300;
 }
 
-.button {
-  padding: 20px;
-  cursor: pointer;
-  background-color: #53c28b;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  width: max-content;
-}
-
 .item {
   flex: 1;
   display: flex;

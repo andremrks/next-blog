@@ -16,6 +16,14 @@
   gap: 20px;
 }
 
+.link {
+  transition: 300ms ease;
+}
+
+.link:hover {
+  color: #fff;
+}
+
 .logout {
   padding: 5px;
   border: none;
@@ -31,5 +39,5 @@
 }
 
 .logout:active {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
