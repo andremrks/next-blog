@@ -20,10 +20,6 @@
   transition: 300ms ease;
 }
 
-.link:hover {
-  color: #fff;
-}
-
 .logout {
   padding: 5px;
   border: none;

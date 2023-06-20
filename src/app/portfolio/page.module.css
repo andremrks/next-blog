@@ -2,12 +2,8 @@
   font-size: 100px;
 }
 
-.container {
-}
-
 .selectTitle {
   margin: 20px 0;
-  color: #fff;
 }
 
 .items {
@@ -46,6 +42,7 @@
 }
 
 .title {
+  color: #bbb;
   position: absolute;
   right: 10px;
   bottom: 10px;
