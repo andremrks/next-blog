@@ -2,17 +2,29 @@ import React from "react";
 import styles from "./page.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import { blogPost } from "@/utils/constants";
 
-const Blog = () => {
+async function getData() {
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
+    cache: "no-store",
+  });
+
+  if (!res.ok) {
+    throw new Error("Failed");
+  }
+
+  return res.json();
+}
+
+const Blog = async () => {
+  const data = await getData();
   return (
     <div className={styles.mainContainer}>
-      {blogPost.map((post) => (
-        <div key={post.id} className={styles.container}>
+      {data.map((item) => (
+        <div key={item.id} className={styles.container}>
           <Link href="/blog/testId" className={styles.container}>
             <div className={styles.imgContainer}>
               <Image
-                src={post.image}
+                src="https://images.pexels.com/photos/17237121/pexels-photo-17237121/free-photo-of-antigo-antepassados-anciao-arquitetura.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Random Image"
                 width={400}
                 height={250}
@@ -20,8 +32,8 @@ const Blog = () => {
               />
             </div>
             <div className={styles.content}>
-              <h1 className={styles.title}>{post.title}</h1>
-              <p className={styles.desc}>{post.desc}</p>
+              <h1 className={styles.title}>{item.title}</h1>
+              <p className={styles.desc}>{item.body}</p>
             </div>
           </Link>
         </div>
