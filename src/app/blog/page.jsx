@@ -21,7 +21,7 @@ const Blog = async () => {
     <div className={styles.mainContainer}>
       {data.map((item) => (
         <div key={item.id} className={styles.container}>
-          <Link href="/blog/testId" className={styles.container}>
+          <Link href="/blog/1" className={styles.container}>
             <div className={styles.imgContainer}>
               <Image
                 src="https://images.pexels.com/photos/17237121/pexels-photo-17237121/free-photo-of-antigo-antepassados-anciao-arquitetura.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

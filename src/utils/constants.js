@@ -1,41 +1,3 @@
-export const catContent = [
-  {
-    id: 1,
-    title: "Lorem Ipsum",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. CorporisLorem cupiditate quam in iure expedita, iusto porro neque praesentium non. Modi error deserunt velit eius amet labore dolor, tempore sunt ipsa.",
-    image:
-      "https://images.pexels.com/photos/17237121/pexels-photo-17237121/free-photo-of-antigo-antepassados-anciao-arquitetura.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-  {
-    id: 2,
-    title: "Lorem Ipsum",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. CorporisLorem cupiditate quam in iure expedita, iusto porro neque praesentium non. Modi error deserunt velit eius amet labore dolor, tempore sunt ipsa.",
-    image:
-      "https://images.pexels.com/photos/5812094/pexels-photo-5812094.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-  {
-    id: 3,
-    title: "Lorem Ipsum",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. CorporisLorem cupiditate quam in iure expedita, iusto porro neque praesentium non. Modi error deserunt velit eius amet labore dolor, tempore sunt ipsa.",
-    image:
-      "https://images.pexels.com/photos/2693529/pexels-photo-2693529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-  {
-    id: 4,
-    title: "Lorem Ipsum",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. CorporisLorem cupiditate quam in iure expedita, iusto porro neque praesentium non. Modi error deserunt velit eius amet labore dolor, tempore sunt ipsa.",
-    image:
-      "https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-  {
-    id: 5,
-    title: "Lorem Ipsum",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. CorporisLorem cupiditate quam in iure expedita, iusto porro neque praesentium non. Modi error deserunt velit eius amet labore dolor, tempore sunt ipsa.",
-    image:
-      "https://images.pexels.com/photos/769525/pexels-photo-769525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-];
-
 export const links = [
   {
     id: 1,
@@ -68,3 +30,75 @@ export const links = [
     url: "/dashboard",
   },
 ];
+
+export const portfolioItems = {
+  applications: [
+    {
+      id: 1,
+      title: "Creative Portfolio",
+      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+      image:
+        "https://images.pexels.com/photos/3130810/pexels-photo-3130810.jpeg",
+    },
+    {
+      id: 2,
+      title: "Minimal Single Product",
+      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+      image:
+        "https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg",
+    },
+    {
+      id: 3,
+      title: "Strong Together Charity",
+      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+      image:
+        "https://images.pexels.com/photos/2916450/pexels-photo-2916450.jpeg",
+    },
+  ],
+  illustrations: [
+    {
+      id: 1,
+      title: "Creative Portfolio",
+      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+      image:
+        "https://images.pexels.com/photos/3130810/pexels-photo-3130810.jpeg",
+    },
+    {
+      id: 2,
+      title: "Minimal Single Product",
+      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+      image:
+        "https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg",
+    },
+    {
+      id: 3,
+      title: "Strong Together Charity",
+      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+      image:
+        "https://images.pexels.com/photos/2916450/pexels-photo-2916450.jpeg",
+    },
+  ],
+  websites: [
+    {
+      id: 1,
+      title: "Creative Portfolio",
+      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+      image:
+        "https://images.pexels.com/photos/3130810/pexels-photo-3130810.jpeg",
+    },
+    {
+      id: 2,
+      title: "Minimal Single Product",
+      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+      image:
+        "https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg",
+    },
+    {
+      id: 3,
+      title: "Strong Together Charity",
+      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+      image:
+        "https://images.pexels.com/photos/2916450/pexels-photo-2916450.jpeg",
+    },
+  ],
+};
