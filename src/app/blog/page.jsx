@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./page.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 
 async function getData() {
   const res = await fetch("http://localhost:3000/api/posts", {
@@ -9,7 +10,7 @@ async function getData() {
   });
 
   if (!res.ok) {
-    throw new Error("Failed");
+    return notFound();
   }
 
   return res.json();
@@ -20,11 +21,11 @@ const Blog = async () => {
   return (
     <div className={styles.mainContainer}>
       {data.map((item) => (
-        <div key={item.id} className={styles.container}>
+        <div key={item._id} className={styles.container}>
           <Link href="/blog/1" className={styles.container}>
             <div className={styles.imgContainer}>
               <Image
-                src="https://images.pexels.com/photos/17237121/pexels-photo-17237121/free-photo-of-antigo-antepassados-anciao-arquitetura.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src={item.img}
                 alt="Random Image"
                 width={400}
                 height={250}
@@ -33,7 +34,7 @@ const Blog = async () => {
             </div>
             <div className={styles.content}>
               <h1 className={styles.title}>{item.title}</h1>
-              <p className={styles.desc}>{item.body}</p>
+              <p className={styles.desc}>{item.desc}</p>
             </div>
           </Link>
         </div>
